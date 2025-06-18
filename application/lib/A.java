@@ -1,0 +1,1 @@
+java -XX:ArchiveClassesAtExit=application.jsa -Dspring.context.exit=onRefresh -jar application/my-app.jar
