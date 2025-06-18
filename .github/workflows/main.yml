@@ -59,9 +59,8 @@ jobs:
           ls -l  build/native/nativeCompile/demo1 # 替换为你的实际文件名
           file build/native/nativeCompile/demo1 # 检查可执行文件的架构信息
           
-      # - name: Upload Native Image Artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: your-arm64-native-image
-      #     path: target/your-app # 替换为你的实际可执行文件路径
-      #     # 如果有其他相关文件，也可以一并上传
+      - name: Upload Native Image Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: arm64-native-image
+          path: build/native/nativeCompile/demo1 # 替换为你的实际可执行文件路径
