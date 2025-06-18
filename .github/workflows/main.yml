@@ -29,7 +29,7 @@ jobs:
           
       - name: Verify GraalVM Native Image setup
         run: |
-          gu list
+          # gu list
           native-image --version
           
       - name: Grant execute permission to gradlew
